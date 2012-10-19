@@ -20,3 +20,5 @@ How to run
 TODO
 ----
  *  imporve configurability
+ *  add tests
+
