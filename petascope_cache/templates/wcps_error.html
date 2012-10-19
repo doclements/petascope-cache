@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Error with WCPS request</h1>
+<h3>WCPS query</h3>
+<pre>{{query}}</pre>
+<h3>Error :</h3>
+{{ error }}
+<h3>Allowed encodings:</h3>
+<table>
+<thead><tr><th>wcps encoding</th><th>return mime-type</th></tr></thead>
+<tbody>
+{% for encoding in encodings.keys() %}
+	<tr class="{{ loop.cycle('odd', 'even') }}"><td>{{ encoding }}</td><td>{{encodings[encoding][0]}}</td></tr>
+{% endfor %}
+{% endblock %}
+</tbody></table>

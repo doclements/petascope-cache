@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>WCPS - cached query test</h1>
+<form action="wcps_cache" method="get">
+wcps query:<br/>
+<textarea name="query" id="query" rows="30" cols="60"> </textarea>
+<input type="submit" value="send query" />
+</form>{% endblock %}

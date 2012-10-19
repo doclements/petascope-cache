@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Error with WCPS request</h1>
+<h3>WCPS query</h3>
+<pre>{{query}}</pre>
+<h3>Response from petascope</h3>
+{{ wcps|safe }}
+{% endblock %}
